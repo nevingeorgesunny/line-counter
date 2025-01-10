@@ -13,13 +13,13 @@ import java.util.List;
  */
 public class App
 {
-    private static String bufferedConcat = System.getProperty("byteProcessing");
+    private static String byteProcessing = System.getProperty("byteProcessing");
 
     public static void main(String[] args ) throws IOException {
         long startTime = System.nanoTime();
         System.out.println("Starting the application...");
 
-        if("true".equals(bufferedConcat)){
+        if("true".equals(byteProcessing)){
             System.out.println("Using byte buffer");
             LineCounterByte.countLine();
         }else {
